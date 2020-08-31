@@ -1,3 +1,31 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Levi Rizki Saputra"
+theme = "toha"
+
+[params]
+copyright = """
+© 2020 Levi Rizki Saputra. <span>Photo by 
+Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+"""
+description = "Portfolio and personal blog of Levi Rizki Saputra."
+background = "images/background.jpg"
+
+[logo]
+main = "/assets/images/main-logo.png"
+inverted = "/assets/images/inverted-logo.png"
+enableBlogPost = false
+enableTOC = false
+
+[params.author]
+name = "Levi Rizki Saputra"
+nickname = "Levi"
+summary = [
+    "I am an Intermediate Android Developer",
+    "I work with Kotlin and Android Studio",
+    "I love to work with some fun projects",
+]
+image = "images/avatar.jpg"
+
+[params.author.contactInfo]
+email = "levirs565@gmail.com"
