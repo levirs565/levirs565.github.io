@@ -1,0 +1,12 @@
+<div class="container-fluid anchor pb-5 projects-section" id="{{ replace (lower .section.name) " " "-" }}">
+  {{ if not (.section.hideTitle) }}
+    <h1 class="text-center">{{ .section.name }}</h1>
+  {{ end }}
+  <div class="container filtr-projects">
+    <div class="row" id="project-card-holder">
+      {{ range .certificates }}
+        {{ partial "cards/certification" . }}
+      {{ end }}
+    </div>
+  </div>
+</div>

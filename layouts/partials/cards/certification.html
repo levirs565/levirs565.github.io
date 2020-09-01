@@ -1,0 +1,32 @@
+<div
+  class="col-sm-12 col-md-6 col-lg-4 p-2">
+  <div class="card mt-1">
+    <div class="card">
+      <a class="card-header" href="{{ .url }}">
+        <div>
+          <div class="d-flex">
+            {{ if .logo }}
+            <img class="card-img-xs" src="{{ .logo }}" alt="{{ .name }}" />
+            {{ end }}
+            <h5 class="card-title mb-0">{{ .name }}</h5>
+          </div>
+          <div class="sub-title">
+            <span>{{ .level }}</span>
+            <span>{{ .date }}</span>
+          </div>
+        </div>
+      </a>
+      <div class="card-body text-justify pt-1 pb-1">
+        <p>{{ .summary | markdownify }}</p>
+        <span class="float-right">
+          <a
+            class="btn btn-outline-info btn-sm mb-2"
+            href="{{ .url }}"
+            target="#"
+            >Details</a
+          >
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
