@@ -1,0 +1,10 @@
+.subtitle {
+  margin: 16px 0;
+}
+
+.main {
+  padding: 8px 16px;
+  margin: 0 auto;
+  max-width: 65ch;
+  box-sizing: border-box;
+}
