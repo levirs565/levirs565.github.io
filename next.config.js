@@ -9,6 +9,7 @@ const nextConfig = {
         pathname: "/levirs565/**",
       },
     ],
+    unoptimized: true,
   },
 };
 
