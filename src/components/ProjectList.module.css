@@ -22,7 +22,6 @@
 .item-image {
   flex: 0 0 250px;
   background: #000;
-  object-fit: cover;
   align-self: center;
   max-width: 250px;
   max-height: 250px;
@@ -32,6 +31,7 @@
 .item-image > img {
   border-radius: 16px;
   overflow: hidden;
+  object-fit: cover;
 }
 
 /* Right Line */
