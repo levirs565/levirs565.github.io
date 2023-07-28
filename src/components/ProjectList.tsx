@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./ProjectList.module.css";
 import { CSSProperties } from "react";
+import { ExternalLink } from "./ExternalLink";
 
 const lineColors = ["green", "red", "blue"];
 
@@ -67,22 +68,12 @@ export default function ProjectList({ list }: { list: ProjectItem[] }) {
             </div>
             <div className="clean-list is-small-box-list">
               {item.githubUrl && (
-                <a
-                  className="small-box is-focusable"
-                  href={item.githubUrl}
-                  target="_blank"
-                >
+                <ExternalLink href={item.githubUrl}>
                   Open in Github
-                </a>
+                </ExternalLink>
               )}
               {item.appUrl && (
-                <a
-                  className="small-box is-focusable"
-                  href={item.appUrl}
-                  target="_blank"
-                >
-                  Open Application
-                </a>
+                <ExternalLink href={item.appUrl}>Open Application</ExternalLink>
               )}
             </div>
           </div>
