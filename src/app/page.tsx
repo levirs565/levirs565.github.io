@@ -4,7 +4,6 @@ import AppBar from "@/components/AppBar";
 import Hero from "@/components/Hero";
 import SkillList from "@/components/SkillList";
 import ProjectList, { ProjectItem } from "@/components/ProjectList";
-import VWHanlder from "@/components/VWHandler";
 
 const skillList = [
   "HTML",
@@ -49,7 +48,6 @@ const projectsList: ProjectItem[] = [
 export default function Home() {
   return (
     <>
-      <VWHanlder></VWHanlder>
       <AppBar></AppBar>
       <main className={styles.main}>
         <Hero></Hero>
