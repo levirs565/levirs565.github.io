@@ -15,6 +15,9 @@ export default function ProjectList({ list }: { list: ProjectItem[] }) {
     <ul className={`clean-list ${styles.list}`}>
       {list.map((item) => (
         <li key={item.name} className={styles.item}>
+          <div className={styles["up-line"]}></div>
+          <div className={styles["down-line"]}></div>
+          <div className={styles["connect-line"]}></div>
           <div className={styles["item-detail"]}>
             <h3>{item.name}</h3>
             <p>{item.desc}</p>
@@ -47,7 +50,6 @@ export default function ProjectList({ list }: { list: ProjectItem[] }) {
                 </a>
               )}
             </div>
-            <div className={styles["second-line"]}></div>
           </div>
           <div className={styles["item-image"]}>
             <Image width={250} height={250} src={item.image} alt={item.name} />
